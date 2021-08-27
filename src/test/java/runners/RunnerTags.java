@@ -7,7 +7,7 @@ import net.serenitybdd.cucumber.CucumberWithSerenity;
 import org.junit.runner.RunWith;
 
 @RunWith(CucumberWithSerenity.class)
-@CucumberOptions(features="src/test/resources/academyChoucair.feature",//demo.feature",
+@CucumberOptions(features="src\\test\\resources\\features\\academyChoucair.feature",//demo.feature",
                  tags="@Regresion",
                   glue="co.com.choucair.certification.proyectobase.stepdefinitions",
                     snippets= SnippetType.CAMELCASE)

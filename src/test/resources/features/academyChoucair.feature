@@ -1,4 +1,4 @@
-# Autor: Jonatan Garcia
+# Autor: Jonatan
 
   @stories
   Feature: Academy Choucair
@@ -6,5 +6,11 @@
   @scenario1
   Scenario: search for a automation course
     Given than brandon wants to learn automation at the academy choucair
-    When he search for the course Recursos Automatización Bancolombia on the choucair academy platform
-    Then he finds the course called resources Recursos Automatización Bancolombia
+    | strUser | strPassword |
+    | <strUser>  | <strPassword> |
+    When he search for the course on the choucair academy platform
+    | strCourse   |
+    | <strCourse> |
+    Then he finds the course called resources
+      | strCourse  |
+      |<strCourse> |
